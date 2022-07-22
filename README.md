@@ -4,6 +4,8 @@ Projet 2 du cursus Développeur Javascript React proposé par [OpenClassrooms](h
 
 Booki est un outil de planification de vacances. Il permet aux usagers de trouver des hébergements et des activités dans la ville de leur choix. Les hébergements peuvent également être filtrés par thématique, par exemple leur budget ou leur ambiance. 
 
+Lien : [Booki - Trouvez votre hébergement pour des vacances de rêve](https://h3lt3r-sk3lt3r.github.io/Booki/)
+
 ## Fabriqué avec
 
 * [Visual Studio Code](https://code.visualstudio.com/) - Editeur de textes
