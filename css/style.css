@@ -4,6 +4,14 @@ em {
   font-style: normal;
 }
 
+h3 {
+  font-size: medium;
+}
+
+p {
+  font-size: small;
+}
+
 strong {
   font-weight: bold;
 }
@@ -209,17 +217,23 @@ nav > a:visited:hover {
 }
 
 .flat-card {
-  height: 100%;
-  width: 100%;
+  height: 85%;
+  width: 97%;
   display: flex;
   flex-direction: column;
   border: 5px solid white;
-  border-radius: 20px;
+  border-radius: 25px;
   background-color: white;
+  box-shadow: 0 0 10px #0000002e;
+  transition: transform .2s;
+}
+
+.rating {
+  margin: 0 1px 1px 1px;
 }
 
 .flat-card:hover {
-  box-shadow: 0 0 10px #0065FC;
+  transform: scale(1.02);
 }
 
 .flat-card .card-photo {
@@ -232,7 +246,8 @@ nav > a:visited:hover {
 }
 
 .flat-card .flat-nameprice h3 {
-  margin-bottom: 0;
+  margin-top: 10px;
+  margin-bottom: 5px;
 }
 
 .flat-card .flat-nameprice p {
@@ -284,17 +299,19 @@ aside {
 }
 
 .popular-card {
-  height: 100%;
+  height: 95%;
   width: 100%;
   display: flex;
   flex-direction: row;
   border: 5px solid white;
-  border-radius: 20px;
+  border-radius: 25px;
   background-color: white;
+  box-shadow: 0 0 10px #0000002e;
+  transition: transform .2s;
 }
 
 .popular-card:hover {
-  box-shadow: 0 0 10px #0065FC;
+  transform: scale(1.02);
 }
 
 .popular-card .card-photo {
@@ -304,14 +321,15 @@ aside {
 
 .popular-card .flat-contain {
   width: 55%;
-  padding-left: 3%;
+  padding-left: 5%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
 }
 
 .popular-card .flat-nameprice * {
-  margin: 0;
+  margin-top: 8px;
+  margin-bottom: -2px;
 }
 
 /*Activités*/
@@ -327,7 +345,8 @@ aside {
   display: flex;
   flex-direction: column;
   border-radius: 20px;
-  box-shadow: 0 0 10px grey;
+  box-shadow: 0px 4px 10px 0px #f0f0f0;
+  transition: transform .2s;
   overflow: hidden;
 }
 
@@ -471,7 +490,7 @@ li {
 
 @media screen and (min-width: 992px) {
   #flats {
-    height: 775px;
+    height: 700px;
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
@@ -514,7 +533,7 @@ li {
   }
 
   #activities {
-    height: 600px;
+    height: 550px;
     padding-bottom: 10px;
   }
 
@@ -570,7 +589,7 @@ li {
   }
 
   .activity-card:hover {
-    box-shadow: 0 0 10px #0065FC;
+    transform: scale(1.02);
   }
 
   /*footer*/
@@ -690,10 +709,6 @@ li {
     padding-right: 5%;
   }
 
-  .flat-card {
-    box-shadow: 0 0 10px grey;
-  }
-
   aside {
     height: 600px;
     padding-bottom: 10%;
@@ -752,12 +767,13 @@ li {
     display: flex;
     flex-direction: column;
     border-radius: 20px;
-    box-shadow: 0 0 10px grey;
+    box-shadow: 0 0 10px #0000002e;
+    transition: transform .2s;
     overflow: hidden;
   }
 
   .activity-card:hover {
-    box-shadow: 0 0 10px #0065FC;
+    transform: scale(1.02);
   }
 
   #activities-list > a > .activity-card .card-photo {
@@ -858,7 +874,7 @@ li {
   }
 
   #all-flats h2, #all-flats h3 {
-    height: 5%;
+    height: 2%;
   }
 
   #flats-list {
