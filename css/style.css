@@ -12,6 +12,10 @@ p {
   font-size: small;
 }
 
+a {
+  color: #181818;
+}
+
 strong {
   font-weight: bold;
 }
