@@ -42,6 +42,7 @@ header {
   justify-content: space-between;
   position: relative;
   top: 0;
+  margin-bottom: 17px;
 }
 
 #logo {
@@ -406,8 +407,6 @@ li {
   main > * {
     padding: 0 3%;
     margin-top: 17px;
-    margin-bottom: 17px;
-    margin-right: 5px;
   }
 
   main > section {
@@ -420,7 +419,7 @@ li {
   }
 
   #formulaire {
-    width: 525px;
+    width: 445px;
   }
 
   #locbutton {
@@ -450,6 +449,7 @@ li {
     width: 85%;
     height: 100%;
     display: flex;
+    padding-top: 7px;
   }
 
   #filters-container h2 {
@@ -515,7 +515,15 @@ li {
 
   #activities {
     height: 600px;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
+  }
+
+  #activities div > * {
+    text-decoration: none;
+  }
+
+  #activities div > a:visited {
+    color: #181818;
   }
 
   #activities-list {
@@ -570,6 +578,7 @@ li {
   footer {
     display: flex;
     justify-content: space-between;
+    padding-top: 20px;
   }
 }
 
@@ -702,7 +711,15 @@ li {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
+  }
+
+  #activities div > * {
+    text-decoration: none;
+  }
+
+  #activities div > a:visited {
+    color: #181818;
   }
 
   #activities h2 {
@@ -805,6 +822,7 @@ li {
   footer {
     display: flex;
     justify-content: space-between;
+    padding-top: 20px;
   }
 }
 
@@ -860,6 +878,7 @@ li {
   footer {
     display: flex;
     flex-direction: column;
+    padding-top: 20px;
   }
 }
 
@@ -873,13 +892,3 @@ li {
   -webkit-box-sizing: border-box;
   * Safari/Chrome, autres WebKit *
 } */
-
-
-/*.flat-card a {
-  color: #333;
-  text-decoration: none;
-}
-
-.flat-contain {
-  padding: 2px 16px;
-}*/
