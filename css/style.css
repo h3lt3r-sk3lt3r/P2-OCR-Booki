@@ -36,6 +36,14 @@ body {
   padding: 0;
 }
 
+.blue {
+  color: #0065FC;
+}
+
+.grey {
+  color: #F2F2F2;
+}
+
 /* Bloc page */
 
 main {
