@@ -255,6 +255,7 @@ nav > a:visited:hover {
 
 .flat-card .flat-contain {
   padding-left: 10px;
+  margin-bottom: 1%;
 }
 
 .flat-card .flat-nameprice h3 {
@@ -336,7 +337,7 @@ aside {
   padding-left: 5%;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 
 .popular-card .flat-nameprice * {
@@ -883,6 +884,7 @@ li {
 
   #all-flats {
     height: 1600px;
+    /*justify-content: space-around; ?*/
   }
 
   #all-flats h2, #all-flats h3 {
