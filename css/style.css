@@ -281,7 +281,6 @@ nav > a:visited:hover {
 aside {
   display: flex;
   flex-direction: column;
-  padding-bottom: 10%;
   background-color: #F2F2F2;
 }
 
@@ -530,7 +529,11 @@ li {
     width: 30%;
     height: 45%;
   }
+}
 
+/*Les plus populaire*/
+
+@media screen and (min-width: 992px) {
   aside {
     border-radius: 25px;
     width: 25%;
@@ -544,6 +547,12 @@ li {
   #popular-list a {
     height: 25%;
   }
+
+}
+
+/* Activités */
+
+@media screen and (min-width: 992px) {
 
   #activities {
     height: 550px;
@@ -658,7 +667,7 @@ li {
   }
 
   main > section > * {
-    padding: 0 3%;
+    padding: 0 2% 15px 3%;
   }
 
   #search-section {
@@ -724,7 +733,6 @@ li {
 
   aside {
     height: 600px;
-    padding-bottom: 10%;
   }
 
   #popular-list {
@@ -815,7 +823,6 @@ li {
     justify-content: center;
     align-items: center;
     width: 120px;
-    border-radius: 15px;
     background-color: #0065FC;
     color: white;
     font-weight: bold;
