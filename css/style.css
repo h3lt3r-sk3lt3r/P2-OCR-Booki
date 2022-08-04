@@ -1,5 +1,9 @@
 /* police >> font-family: 'Raleway', sans-serif; */
 
+* {
+  box-sizing: border-box;
+}
+
 em {
   font-style: normal;
 }
@@ -162,13 +166,6 @@ nav > a:visited:hover {
   padding-right: 10px;
 }
 
-.enabled-filter {
-  background-color: #dfecff;
-  padding: 0;
-  padding-left: 10px;
-  flex-direction: row-reverse;
-}
-
 #filters button:nth-child(1) {
   width: 165px;
 }
@@ -230,7 +227,7 @@ nav > a:visited:hover {
 
 .flat-card {
   height: 85%;
-  width: 97%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   border: 5px solid white;
@@ -249,7 +246,7 @@ nav > a:visited:hover {
 }
 
 .flat-card .card-photo {
-  height: 70%;
+  height: 130px;
   border-radius: 20px 20px 0 0;
 }
 
@@ -327,7 +324,7 @@ aside {
 }
 
 .popular-card .card-photo {
-  width: 40%;
+  width: 100px;
   border-radius: 20px 0 0 20px;
 }
 
@@ -502,7 +499,6 @@ li {
 
 @media screen and (min-width: 992px) {
   #flats {
-    height: 700px;
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
@@ -536,7 +532,7 @@ li {
 @media screen and (min-width: 992px) {
   aside {
     border-radius: 25px;
-    width: 25%;
+    width: 32%;
     padding: 20px 2%;
   }
 
