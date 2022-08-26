@@ -229,7 +229,7 @@ nav > a:visited:hover {
 }
 
 .flat-card {
-  height: 85%;
+  /* height: 85%; */
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -327,12 +327,12 @@ aside {
 }
 
 .popular-card .card-photo {
-  width: 100px;
+  width: 130px;
   border-radius: 20px 0 0 20px;
 }
 
 .popular-card .flat-contain {
-  width: 55%;
+  width: 100%;
   padding-left: 5%;
   display: flex;
   flex-direction: column;
@@ -489,7 +489,6 @@ li {
   }
 
   #flats-list {
-    height: 80%;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -497,7 +496,6 @@ li {
 
   #flats-list a {
     width: 30%;
-    height: 45%;
   }
 }
 
@@ -671,7 +669,6 @@ li {
   }
 
   #flats-list {
-    height: 90%;
     padding-right: 5%;
   }
 
@@ -772,10 +769,6 @@ li {
     display: none;
   }
 
-  #all-flats {
-    height: 1200px;
-  }
-
   #all-flats > div:nth-child(3) {
     height: 5%;
   }
@@ -788,7 +781,6 @@ li {
 
   #flats-list a {
     width: 45%;
-    height: 30%;
   }
 
   #activities {
@@ -818,9 +810,9 @@ li {
     background-color: #F2F2F2;
   }
 
-  #all-flats {
+  /* #all-flats {
     height: 1600px;
-  }
+  } */
 
   #all-flats h2, #all-flats h3 {
     height: 2%;
@@ -830,10 +822,6 @@ li {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-  }
-
-  #flats-list a {
-    height: 15%;
   }
 
   #activities {
