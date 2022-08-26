@@ -121,6 +121,43 @@ nav > a:visited:hover {
   font-size: 14px;
 }
 
+#search-section form {
+  display: inline-flex;
+  max-width: 100%;
+}
+
+#search-section form input {
+  border-right: none;
+  border-left: none;
+  border-top: #F2F2F2 1px solid;
+  border-bottom: #F2F2F2 1px solid;
+  padding: 0 1.5rem;
+  width: 14rem;
+  font-size: 1rem;
+  font-weight: bold;
+  font-family: "Raleway", "Sans serif";
+}
+
+#search-section form button {
+  background-color: #0065FC;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 0 1rem 1rem 0;
+  font-family: "Raleway", "Sans serif";
+  font-size: 1rem;
+  cursor: pointer;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+  #locbutton {
+    background-color: #F2F2F2;
+    padding: 1rem 1.25rem;
+    border-radius: 1rem 0 0 1rem;
+    text-align: center;
+  }
+
 #formulaire {
   height: 45px;
   display: flex;
@@ -689,10 +726,12 @@ li {
     padding: 0;
   }
 
-  #locbutton {
-    width: 60px;
-    pointer-events: none
-  }
+  /* #locbutton {
+    background-color: #F2F2F2;
+    padding: 1rem 1.25rem;
+    border-radius: 1rem 0 0 1rem;
+    text-align: center;
+  } */
 
   #filters-container {
     display: flex;
@@ -870,7 +909,7 @@ li {
     display: none;
   }
 
-  #searchbutton-icon {
+  /* #searchbutton-icon {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -879,7 +918,7 @@ li {
     background-color: #0065FC;
     color: white;
     font-weight: bold;
-  }
+  } */
 
   #popular {
     background-color: #F2F2F2;
