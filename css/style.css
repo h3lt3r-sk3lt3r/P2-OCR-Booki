@@ -240,7 +240,7 @@ nav > a:visited:hover {
   transition: transform .2s;
 }
 
-.rating {
+.flat-card .rating {
   margin: 0 1px 1px 1px;
 }
 
@@ -292,7 +292,8 @@ aside {
 #popular-list {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
+  margin-top: 15px;
 }
 
 #popular-list > * {
@@ -307,7 +308,7 @@ aside {
 }
 
 .popular-card {
-  height: 95%;
+  height: 125%;
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -323,7 +324,7 @@ aside {
 }
 
 .popular-card .card-photo {
-  width: 130px;
+  width: 225px;
   border-radius: 20px 0 0 20px;
 }
 
@@ -332,12 +333,15 @@ aside {
   padding-left: 5%;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 
 .popular-card .flat-nameprice * {
-  margin-top: 8px;
-  margin-bottom: -2px;
+  margin-top: 12px;
+}
+
+.popular-card .rating {
+  margin-bottom: 13px;
 }
 
 /*Activités*/
@@ -504,10 +508,6 @@ li {
     border-radius: 25px;
     width: 32%;
     padding: 20px 2%;
-  }
-
-  #popular-list {
-    height: 85%;
   }
 
   #popular-list a {
@@ -808,10 +808,6 @@ li {
   #popular {
     background-color: #F2F2F2;
   }
-
-  /* #all-flats {
-    height: 1600px;
-  } */
 
   #all-flats h2, #all-flats h3 {
     height: 2%;
