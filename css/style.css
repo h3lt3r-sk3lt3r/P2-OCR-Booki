@@ -489,6 +489,7 @@ li {
     justify-content: space-between;
     flex-wrap: wrap;
     flex-direction: row;
+    gap: 25px;
   }
 
   #flats-list a {
@@ -774,6 +775,7 @@ li {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    gap: 25px;
   }
 
   #flats-list a {
@@ -819,6 +821,7 @@ li {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    gap: 25px;
   }
 
   #activities {
