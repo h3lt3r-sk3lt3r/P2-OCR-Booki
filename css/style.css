@@ -284,10 +284,6 @@ aside {
   background-color: #F2F2F2;
 }
 
-#popular-title {
-  height: 10%;
-}
-
 #popular-title h2 {
   display: flex;
   justify-content: space-between;
@@ -492,6 +488,7 @@ li {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    flex-direction: row;
   }
 
   #flats-list a {
