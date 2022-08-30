@@ -229,7 +229,6 @@ nav > a:visited:hover {
 }
 
 .flat-card {
-  /* height: 85%; */
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -292,8 +291,8 @@ aside {
 #popular-list {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  margin-top: 15px;
+  justify-content: space-evenly;
+  gap: 25px;
 }
 
 #popular-list > * {
@@ -317,6 +316,7 @@ aside {
   background-color: white;
   box-shadow: 0 0 10px #0000002e;
   transition: transform .2s;
+  max-height: 130px;
 }
 
 .popular-card:hover {
@@ -670,10 +670,6 @@ li {
     padding-right: 5%;
   }
 
-  aside {
-    height: 600px;
-  }
-
   #popular-list {
     height: 90%;
   }
@@ -782,8 +778,8 @@ li {
     width: 45%;
   }
 
-  #activities {
-    height: 2200px;
+  .activity-card {
+    max-height: 280px;
   }
 
   footer {
@@ -820,8 +816,8 @@ li {
     gap: 25px;
   }
 
-  #activities {
-    height: 1600px;
+  .activity-card {
+    max-height: 275px;
   }
 
   footer {
