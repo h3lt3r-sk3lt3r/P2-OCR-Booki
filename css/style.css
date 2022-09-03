@@ -8,6 +8,10 @@ em {
   font-style: normal;
 }
 
+h1 {
+  margin-top: 0;
+}
+
 h3 {
   font-size: medium;
 }
@@ -48,16 +52,7 @@ body {
   color: #F2F2F2;
 }
 
-/* Bloc page */
-
-main {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  margin: 0;
-  color: #181818;
-  background-color: white;
-}
+/* ------------ DESKTOP -------------- */
 
 /* Header */
 
@@ -72,6 +67,12 @@ header {
 #logo {
   margin: 15px 0;
   width: 100px;;
+}
+
+nav {
+  display: flex;
+  justify-content: space-evenly;
+  width: 250px;
 }
 
 nav ul {
@@ -89,13 +90,15 @@ nav li:focus {
 
 nav > a {
   font-size: 15px;
-  color: #181818;
-  padding-bottom: 3px;
+  padding: 35px 20px;
+  margin: -17px 15px;
+  border-top: 2px #F2F2F2 solid;
   text-decoration: none;
 }
 
 nav > a:hover {
   color: #0065FC;
+  border-top: 2px #0065FC solid;
 }
 
 nav > a:visited {
@@ -106,11 +109,38 @@ nav > a:visited:hover {
   color: #0065FC;
 }
 
+/* Bloc page */
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0;
+  color: #181818;
+  background-color: white;
+}
+
+main > * {
+  padding: 0 3%;
+  margin-top: 17px;
+}
 
 /* Partie recherche (+ filtres) */
 
 #search-section {
   margin-top: 0;
+}
+
+#searchbutton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 175px;
+  background-color: #0065FC;
+}
+
+#searchbutton-icon {
+  display: none;
 }
 
 #search-section > div {
@@ -156,6 +186,7 @@ nav > a:visited:hover {
   padding: 16px 20px;
   border-radius: 16px 0 0 16px;
   text-align: center;
+  width: 55px;
 }
 
 #filters {
@@ -223,6 +254,34 @@ nav > a:visited:hover {
   overflow-y: hidden;
 }
 
+#flats {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+
+  #flats>div {
+    border-radius: 25px;
+  }
+
+  #all-flats {
+    width: 65%;
+    padding: 20px 2%;
+    background-color: #F2F2F2;
+  }
+
+  #flats-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 25px;
+  }
+
+  #flats-list a {
+    width: 30%;
+  }
+
 #flats-list > * {
   color: black;
   text-decoration: none;
@@ -281,6 +340,9 @@ aside {
   display: flex;
   flex-direction: column;
   background-color: #F2F2F2;
+  border-radius: 25px;
+  width: 32%;
+  padding: 20px 2%;
 }
 
 #popular-title h2 {
@@ -304,6 +366,7 @@ aside {
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 25%;
 }
 
 .popular-card {
@@ -368,6 +431,66 @@ aside {
   padding-left: 20px;
 }
 
+#activities {
+  height: 550px;
+  padding-bottom: 10px;
+}
+
+    #activities div>* {
+      text-decoration: none;
+    }
+
+    #activities div>a:visited {
+      color: #181818;
+    }
+
+    #activities-list {
+      height: 85%;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    #activities-list>* {
+      width: 22.5%;
+      height: 100%;
+    }
+
+    #activities-list>a>.activity-card .card-photo {
+      height: 90%;
+    }
+
+    #activities-two-cards1 {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    #activities-two-cards1 a:nth-child(1) {
+      height: 50%;
+    }
+
+    #activities-two-cards1 a:nth-child(2) {
+      height: 40%;
+    }
+
+    #activities-two-cards2 {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    #activities-two-cards2 a:nth-child(1) {
+      height: 45%;
+    }
+
+    #activities-two-cards2 a:nth-child(2) {
+      height: 45%;
+    }
+
+    .activity-card:hover {
+      transform: scale(1.02);
+    }
+
 /*Footer*/
 
 footer {
@@ -379,6 +502,12 @@ footer {
 #about-us #our-flats #assistance {
   justify-content: center;
   flex: 1;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 17px 42.75px 17px 42.75px;
 }
 
 footer ul {
@@ -403,197 +532,11 @@ li {
   line-height: 2;
 }
 
-/* -------------DESKTOP--------------- */
+/* ------------ TABLETTE (breakpoint 992px) ------------- */
 
 /* Header */
 
-@media screen and (min-width: 992px) {
-  h1 {
-    margin-top: 0;
-  }
-
-  nav {
-    display: flex;
-    justify-content: space-evenly;
-    bottom: 0;
-    width: 250px;
-  }
-
-  nav > a {
-    display: flex;
-    align-items: center;
-    padding: 0 20px;
-    border-top: 2px #F2F2F2 solid;
-    margin: -17px 15px;
-  }
-
-  nav > a:hover {
-    border-top: 2px #0065FC solid;
-  }
-}
-
-/* Partie recherche (+ filtres) */
-
-@media screen and (min-width: 992px) {
-  main > * {
-    padding: 0 3%;
-    margin-top: 17px;
-  }
-
-  main > section {
-    margin-top: 2%;
-  }
-
-  #search-title * {
-    margin: 0;
-    line-height: 1.5;
-  }
-
-  #locbutton {
-    width: 55px;
-    pointer-events: none
-  }
-
-  #searchbutton {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 175px;
-    background-color: #0065FC;
-    color: #F2F2F2;
-    font-weight: bold;
-  }
-
-  #searchbutton-icon {
-    display: none;
-  }
-}
-
-/* Hébergements */
-
-@media screen and (min-width: 992px) {
-  #flats {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-between;
-  }
-
-  #flats > div {
-    border-radius: 25px;
-  }
-
-  #all-flats {
-    width: 65%;
-    padding: 20px 2%;
-    background-color: #F2F2F2;
-  }
-
-  #flats-list {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    flex-direction: row;
-    gap: 25px;
-  }
-
-  #flats-list a {
-    width: 30%;
-  }
-}
-
-/*Les plus populaire*/
-
-@media screen and (min-width: 992px) {
-  aside {
-    border-radius: 25px;
-    width: 32%;
-    padding: 20px 2%;
-  }
-
-  #popular-list a {
-    height: 25%;
-  }
-
-}
-
-/* Activités */
-
-@media screen and (min-width: 992px) {
-
-  #activities {
-    height: 550px;
-    padding-bottom: 10px;
-  }
-
-  #activities div > * {
-    text-decoration: none;
-  }
-
-  #activities div > a:visited {
-    color: #181818;
-  }
-
-  #activities-list {
-    height: 85%;
-    display: flex;
-    justify-content: space-between;
-  }
-
-  #activities-list > * {
-    width: 22.5%;
-    height: 100%;
-  }
-
-  #activities-list > a > .activity-card .card-photo {
-    height: 90%;
-  }
-
-  #activities-two-cards1 {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-
-  #activities-two-cards1 a:nth-child(1) {
-    height: 50%;
-  }
-
-  #activities-two-cards1 a:nth-child(2) {
-    height: 40%;
-  }
-
-  #activities-two-cards2 {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-
-  #activities-two-cards2 a:nth-child(1) {
-    height: 45%;
-  }
-
-  #activities-two-cards2 a:nth-child(2) {
-    height: 45%;
-  }
-
-  .activity-card:hover {
-    transform: scale(1.02);
-  }
-
-  /*footer*/
-
-  footer {
-    display: flex;
-    justify-content: space-between;
-    padding: 17px 42.75px 17px 42.75px;
-  }
-}
-
-/* ------------(écran max 992px)------------- */
-
-/* Header */
-
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 992px) {
   header {
     display: flex;
     flex-direction: column;
@@ -615,22 +558,25 @@ li {
 
   nav > a {
     width: 50%;
-    margin-bottom: 10px;
+    margin: 0 0 25px 0;
     padding: 10px 0;
     border-bottom: 2px #F2F2F2 solid;
+    border-top: none;
   }
 
   nav > a:hover {
     border-bottom: 2px #0065FC solid;
+    border-top: none;
   }
 }
 
 /* Partie recherche (+ filtres) */
 
-@media screen and (max-width: 991px) {
-  /* main > section > * > * {
-    padding: 0 2%;
-  } */
+@media screen and (max-width: 992px) {
+  main > * {
+    padding: 0 0%;
+    margin-top: 0px;
+  }
 
   main > section > * {
     padding: 0 2% 15px 3%;
@@ -658,16 +604,22 @@ li {
 
 /* Hébergements */
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 992px) {
+  aside {
+    width: 100%;
+  }
+
+  #flats {
+    flex-direction: column;
+  }
 
   #all-flats {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-  }
-
-  #flats-list {
-    padding-right: 5%;
+    width: 100%;
+    padding: 20px 2%;
+    background-color: white;
   }
 
   #popular-list {
@@ -678,11 +630,16 @@ li {
     height: 27.5%;
   }
 
+  .activity-card {
+    max-height: 280px;
+  }
+
   #activities {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     padding-bottom: 10px;
+    height: 100%;
   }
 
   #activities div > * {
@@ -736,69 +693,32 @@ li {
     height: 90%;
   }
 
+  #activities-list>* {
+    width: 100%;
+    height: 100%;
+  }
+
   footer {
-    padding: 0 3%;
+    display: flex;
+    justify-content: space-between;
+    padding: 17px 42.75px 17px 42.75px;
   }
 }
 
-/* ------------Tablette entre 768px et 991px)------------- */
+/* ------------ MOBILE (breakpoint 768px) ------------- */
 
-@media screen and (min-width: 768px) and (max-width: 991px) {
+@media screen and (max-width: 768px) {
   #search-section > div:nth-child(2) {
-    width: 500px;
     display: flex;
+    justify-content: center;
   }
 
   #searchbutton {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 120px;
-    background-color: #0065FC;
-    color: white;
-    font-weight: bold;
+    display: none;
   }
 
   #searchbutton-icon {
-    display: none;
-  }
-
-  #all-flats > div:nth-child(3) {
-    height: 5%;
-  }
-
-  #flats-list {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 25px;
-  }
-
-  #flats-list a {
-    width: 45%;
-  }
-
-  .activity-card {
-    max-height: 280px;
-  }
-
-  footer {
-    display: flex;
-    justify-content: space-between;
-    padding-top: 20px;
-  }
-}
-
-/* ------------Smartphone sous 768px)------------- */
-
-@media screen and (max-width: 767px) {
-  #search-section > div:nth-child(2) {
-    display: flex;
-    justify-content: center;
-  }
-
-  #searchbutton {
-    display: none;
+    display: unset;
   }
 
   #popular {
@@ -814,6 +734,10 @@ li {
     flex-direction: column;
     justify-content: space-between;
     gap: 25px;
+  }
+
+  #flats-list a {
+    width: 100%;
   }
 
   .activity-card {
